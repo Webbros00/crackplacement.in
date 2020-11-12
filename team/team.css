@@ -1,0 +1,17 @@
+
+.team
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.haider, .atul, .ankit, .sid
+{
+    width: 300px;
+    height: 500px;
+    border: 2px solid #1ba098;
+    margin: 20px;
+    border-radius: 20px;
+}
