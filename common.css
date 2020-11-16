@@ -73,6 +73,7 @@ a
     background-color: #deb992;
     border: none;
     border-radius: 0px 0px 5px 5px;
+    transition-duration: 0.4s;
 }
 
 @media screen and (min-width: 768px)
@@ -86,7 +87,6 @@ a
         font-size: 16px;
         width: 110%;
         height: 110%;
-        transition-duration: 0.4s;
     }
 
 }
