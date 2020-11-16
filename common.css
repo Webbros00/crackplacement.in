@@ -60,6 +60,7 @@ li
     text-align: center;
     color: #1ba098;
     outline: none;
+    transition-duration: 0.4s;
 }
 
 a
@@ -73,7 +74,6 @@ a
     background-color: #deb992;
     border: none;
     border-radius: 0px 0px 5px 5px;
-    transition-duration: 0.4s;
 }
 
 @media screen and (min-width: 768px)
