@@ -190,21 +190,37 @@ a
     transform: translateX(0%);
 }
 
+.line1, .line3
+{
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+    transition: transform ease 0.2s;
+}
+
+.line2
+{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
 .line1-active
 {
     transform: rotate(45deg);
     transform-origin: 5% 40%;
+    transition: transform ease 0.2s;
 }
 
 .line2-active
 {
     opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .line3-active
 {
     transform: rotate(-45deg);
     transform-origin: 5% 40%;
+    transition: transform ease 0.2s;
 }
 
 .footer
