@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.team
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    flex-wrap: wrap;
+}
+
+.haider, .atul, .ankit, .sid
+{
+    width: 300px;
+    height: 500px;
+    border: 2px solid #051622;
+    box-shadow: 10px 10px 30px #000000;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.headshot
+{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    align-items: center;
+}
+
+.face
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px #000000;
+}
+
+.name
+{
+    display: flex;
+    justify-content: center;
+    font-family: "Comfortaa";
+    font-size: 30px;
+    font-weight: 700;
+    color: #e1e2e1;
+    padding: 0px;
+}
+
+.position
+{
+    display: flex;
+    justify-content: center;
+    font-family: "Comfortaa";
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e1e2e1;
+}
+
+.icon
+{
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.4s;
+}
+
+.haider:hover .icon
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.atul:hover .icon
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ankit:hover .icon
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.sid:hover .icon
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px)
+{
+    .icon
+    {
+        transform: none;
+        opacity: 1;
+    }
+}
