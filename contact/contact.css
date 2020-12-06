@@ -1,0 +1,114 @@
+.contacts
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 120px 0px 0px 0px;
+}
+
+.email, .whatsapp, .address
+{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #051622;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px #000000;
+    margin: 50px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.cicon
+{
+    width: 150px;
+    height: 150px;
+    margin: 0px 0px 20px 0px;
+    transform: translateY(30px);
+    transition: 0.4s;
+}
+
+.cont
+{
+    color: #e1e2e1;
+    font-family: "Comfortaa";
+    font-size: 30px;
+    font-weight: 700;
+    transform: translateY(30px);
+    transition: 0.4s;
+}
+
+.det
+{
+    transition: 0.4s;
+    opacity: 0;
+    color: #e1e2e1;
+    font-family: "Comfortaa";
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 20px;
+    cursor: default;
+}
+
+.det a
+{
+    text-decoration: none;
+    color: #e1e2e1;
+    font-family: "Comfortaa";
+    line-height: 15px;
+    padding: 20px;
+}
+
+.email:hover .cicon, .email:hover .cont, .whatsapp:hover .cicon, .whatsapp:hover .cont, .address:hover .cicon, .address:hover .cont
+{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.email:hover .det, .whatsapp:hover .det, .address:hover .det
+{
+    transform: translateY(-100px);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .contacts
+    {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .email, .whatsapp, .address
+    {
+        height: 400px;
+    }
+
+    .email .cicon, .email .cont, .whatsapp .cicon, .whatsapp .cont, .address .cicon, .address .cont
+    {
+        transition: none;
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    .email .det, .whatsapp .det, .address .det
+    {
+        transition: none;
+        opacity: 1;
+    }
+
+    .email:hover .cicon, .email:hover .cont, .whatsapp:hover .cicon, .whatsapp:hover .cont, .address:hover .cicon, .address:hover .cont
+    {
+        transition: none;
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    .email:hover .det, .whatsapp:hover .det, .address:hover .det
+    {
+        transition: none;
+        transform: none;
+    }
+}
