@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    overflow: hidden;
 }
 
 .cicon
