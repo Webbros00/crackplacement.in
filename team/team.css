@@ -69,6 +69,10 @@ body::after
     transition: 0.4s;
     overflow: hidden;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
 }
 
 .headshot
