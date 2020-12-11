@@ -147,6 +147,7 @@ a
     {
         opacity: 1;
         width: 100%;
+        font-weight: bold;
     }
 
     .menubutton:hover
