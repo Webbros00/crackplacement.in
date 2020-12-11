@@ -23,7 +23,7 @@
 
 .maths:hover, .comp:hover, .eng:hover
 {
-    transform: scale(1.2);
+    transform: scale(1.1);
     font-size: 40px;
     background-color: #deb992;
 }
