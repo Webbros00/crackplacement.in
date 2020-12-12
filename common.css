@@ -193,17 +193,20 @@ a
 {
     transform: rotate(45deg);
     transform-origin: 5% 40%;
+    transition-duration: 0.4s;
 }
 
 .line2-active
 {
     opacity: 0;
+    transition-duration: 0.4s;
 }
 
 .line3-active
 {
     transform: rotate(-45deg);
     transform-origin: 5% 40%;
+    transition-duration: 0.4s;
 }
 
 .footer
