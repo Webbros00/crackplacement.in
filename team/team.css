@@ -164,6 +164,7 @@ body::after
     color: #051622;
     font-size: 40px;
     text-align: center;
+    font-family: "Comfortaa";
     border-radius: 50%;
     pointer-events: none;
     font-weight: 900;
@@ -178,6 +179,7 @@ body::after
     margin: 15px;
     color: #1ba098;
     opacity: 0;
+    font-family: "Comfortaa";
     text-align: justify;
     z-index: 40;
     transition: 0.5s;
