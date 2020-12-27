@@ -1,0 +1,86 @@
+.page
+{
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: justify;
+    color: #e1e2d2;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #00000080;
+    transition-duration: 0.4s;
+}
+
+.pagenav
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagenav button
+{
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: #05162200;
+    color: #1ba098;
+    border: none;
+    box-shadow: 0 0 10px #00000080;
+    transition-duration: 0.4s;
+}
+
+h1
+{
+    color: #1ba098;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-weight: 900;
+    transition-duration: 0.4s;
+}
+
+span
+{
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .page
+    {
+        width: 60%;
+    }
+    
+    .pagenav
+    {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .page
+    {
+        width: 75%;
+    }
+
+    .pagenav
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .page
+    {
+        width: 90%;
+    }
+
+    .pagenav
+    {
+        width: 90%;
+    }
+}
