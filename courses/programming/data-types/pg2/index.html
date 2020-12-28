@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#051622">
+    <meta name="msapplication-navbutton-color" content="#051622">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>
+        Data Types
+    </title>
+    <link rel = "stylesheet" type = "text/css" href = "../../../../common.css">
+    <link rel = "stylesheet" type = "text/css" href = "data-types-pg2.css">
+    <link rel = "stylesheet" type = "text/css" href = "theme.css">
+    <link rel = "icon" type = "image/gif" href = "../../../../icons/cp logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "wrapper" id = "wrapper">
+        <nav class = "navbar" id = "navbar">
+            <div class = "left" id = "left">
+                <img src = "../../../../icons/cp logo.png" alt = "Crack Placement Logo">
+            </div>
+            <ul class = "menu" id = "menu">
+                <div class="top" id="top">
+                    <li>
+                        <a href = "../../../../">
+                            <button  class = "menubutton" id = "home">
+                                Home
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "../../../../courses/">
+                            <button  class = "menubutton" id = "courses">
+                                Courses
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "../../../../team/">
+                            <button  class = "menubutton" id = "team">
+                                Team
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "../../../../contact/">
+                            <button  class = "menubutton" id = "contact">
+                                Contact
+                            </button>
+                        </a>
+                    </li>
+                </div>
+                <div class = "themebar" id = "themebar">
+                    <div class = "theme" id = "theme">
+                        <div class = "dark" id = "dark">Dark-Mode</div>
+                        <div class="container" id="container">
+                            <div class="switch" id="switch"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom" id="bottom">
+                    <div class = "bottom-icons" id = "bottom-icons">
+                        <a href = "https://twitter.com/CrackPlacement" target="_blank">
+                            <img class = "bottom-icon" id = "bottom-icon1" src="../../../../icons/twitter.png" alt="Twitter">
+                        </a>
+                        <a href = "https://www.linkedin.com/company/crackplacement/" target="_blank">
+                            <img class = "bottom-icon" id = "bottom-icon2" src="../../../../icons/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href = "https://www.facebook.com/crackplacement" target="_blank">
+                            <img class = "bottom-icon" id = "bottom-icon3" src="../../../../icons/facebook.png" alt="Facebook">
+                        </a>
+                        <a href = "https://www.instagram.com/crackplacement/" target="_blank">
+                            <img class = "bottom-icon" id = "bottom-icon4" src="../../../../icons/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                    &copy;Crack Placement 2021. All rights reserved.
+                </div>
+            </ul>
+            <div class = "burger" id = "burger">
+                <div class = "line1" id = "line1"></div>
+                <div class = "line2" id = "line2"></div>
+                <div class = "line3" id = "line3"></div>
+            </div>
+            <div class="right" id="right"></div>
+        </nav>
+        <br>
+        <br>
+        <div class = "pagenav" id = "pagenav">
+            <a href = "#"><button>Next Topic</button></a>
+        </div>
+        <div class="page" id="page">
+            <h1 id = "pageh1">Data Types</h1>
+            <br>
+            <br>
+            <br>
+            <ol start = "2" class = "mainlist">
+                <li class = "mainitem">
+                    <span>Derived Datatypes :</span>
+                    <br>
+                    <br>
+                    These datatypes are derived from the primitve ones (predefined datatypes) and those are as follows:
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Functions</li>
+                        <li>Arrays</li>
+                        <li>Pointers</li>
+                        <li>References</li>
+                    </ol>
+                    <br>
+                    <ol>
+                        <li>
+                            Functions:
+                            <br>
+                            They are blocks of user defined code that are made for a specific task.
+                            They can be called by the programmer whenever needed , so as to execute the statements and hence 
+                            prevents code rewriting.
+                            <br>
+                            <br>
+                            There’s one default function every C program must have: main()
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            returnType &lt;functName&gt;( functParameters)
+                            <br>
+                            {
+                            <br>
+                            //FunctionStatements
+                            <br>
+                            }
+                            <br>
+                            <br>
+                            e.g.
+                            <br>
+                            int decreaseBy5(int userVal)
+                            <br>
+                            {
+                            <br>
+                            return userVal - 5 ;
+                            <br>
+                            }
+                            <br>
+                            // This function does nothing but returns the value by subtracting "5" from the passed parameter.
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            Array
+                            <br>
+                            An array is a collection of similar type of data items , which are stored in contiguous locations in the memory. The array 
+                            variable is used to represent a set of values.
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            dataType &lt;name&gt; [size];
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            Pointers
+                            <br>
+                            Pointers are datatypes that point to memory addresses. They can reference and dereference values and are used to implement 
+                            dynamic datastructures.
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            dataType *&lt;
+                            <br>
+                            pointer_name&gt;
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            Reference
+                            <br>
+                            References are aliases for existing variables. Variables can be referenced by putting ‘&’ in the declaration.
+                        </li>
+                    </ol>
+                </li>
+                <br>
+                <br>
+                <li class = "mainitem">
+                    <span>User Defined DataTypes:</span>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Class</li>
+                        <li>Structure</li>
+                        <li>Union</li>
+                        <li>Enumeration</li>
+                        <li>TypeDef</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>
+                            Class:
+                            <br>
+                            These are the building blocks of Object Oriented Programming. They consist of data members and member functions, 
+                            which are accessible via instances of class known as objects.
+                            <br>
+                            Classes are blueprints for objects.
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            class &lt;className&gt;
+                            <br>
+                            {
+                            <br>
+                            accessSpecifier;
+                            <br>
+                            dataMembers;
+                            <br>
+                            memberFunctions( )
+                            <br>
+                            {
+                            <br>
+                            //Function Definition
+                            <br>
+                            }
+                            <br>
+                            }
+                        </li>
+                        <br>
+                        <li>
+                            Structure:
+                            <br>
+                            Structures are again user defined data types in C/C++. They are used to group data item
+                            into one single structure.
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            struct userDetails
+                            <br>
+                            {
+                            <br>
+                            char name[50];
+                            <br>
+                            char address[100];
+                            <br>
+                            int mob_number;
+                            <br>
+                            };
+                        </li>
+                        <br>
+                        <li>
+                            Union :
+                            <br>
+                            Unions are user defined data types where all the consisting members share the same memory locations.
+                            <br>
+                            eg.
+                            <br>
+                            union Example
+                            <br>
+                            {
+                            <br>
+                            int x, y;
+                            <br> 
+                            };
+                            <br>
+                            int main()
+                            <br>
+                            {
+                            <br>
+                            // A union variable e
+                            <br>
+                            union Example e;
+                            <br>
+                            // e.y also gets value 2 
+                            <br>
+                            e.x = 2;
+                            <br>
+                            cout &lt;&lt; "After making x = 2:"&lt;&lt; endl &lt;&lt; "x = " &lt;&lt; e.x &lt;&lt; ", y = " &lt;&lt; e.y 
+                            &lt;&lt; endl;
+                            <br>
+                            // e.x is also updated to 10
+                            <br>
+                            e.y = 10;
+                            <br>
+                            cout &lt;&lt; "After making Y = 10:"&lt;&lt; endl &lt;&lt; "x = " &lt;&lt; e.x &lt;&lt; ", y = " &lt;&lt; e.y 
+                            &lt;&lt; endl;
+                            <br>
+                            return 0;
+                            <br>
+                            }
+                        </li>
+                        <br>
+                        <li>
+                            Enumeration:
+                            <br>
+                            Enumerations assign names to integral constants , thus help to maintain readability of the program.
+                            <br>
+                            <br>
+                            Syntax:
+                            <br>
+                            <br>
+                            enum Result {Pass=1, Fail=0}
+                        </li>
+                        <br>
+                        <li>
+                            Typedef:
+                            <br>
+                            Its a keyword used to assign alternative names to existing datatypes. Its employed for user defined 
+                            datatypes when the names get a little complex.
+                            <br>
+                            <br>
+                            Syntax :
+                            <br>
+                            <br>
+                            typedef &lt;type&gt; &lt;name&gt;
+                        </li>
+                        <br>
+                        <br>
+                    </ol>
+                </li>
+            </ol>
+            (Continued on next page.)
+        </div>
+        <div class="pagenum" id="pagenum">
+            <a href = "../"><div class="pagenum-1" id="pagenum-1">1</div></a>
+            <a href = "#"><div class="pagenum-2" id="pagenum-2">2</div></a>
+            <a href = "../pg3/"><div class="pagenum-3" id="pagenum-3">3</div></a>
+        </div>
+        <br>
+        <br>
+        <div class = "push" id = "push"></div>
+    </div>
+    <footer class = "footer" id = "footer">
+        <div class = "foot-icons" id = "foot-icons">
+            <a href = "https://twitter.com/CrackPlacement" target="_blank">
+                <img class = "foot-icon" id = "foot-icon1" src="../../../../icons/twitter.png" alt="Twitter">
+            </a>
+            <a href = "https://www.linkedin.com/company/crackplacement/" target="_blank">
+                <img class = "foot-icon" id = "foot-icon2" src="../../../../icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href = "https://www.facebook.com/crackplacement" target="_blank">
+                <img class = "foot-icon" id = "foot-icon3" src="../../../../icons/facebook.png" alt="Facebook">
+            </a>
+            <a href = "https://www.instagram.com/crackplacement/" target="_blank">
+                <img class = "foot-icon" id = "foot-icon4" src="../../../../icons/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    <script src = "../../../../common.js"></script>
+    <script src = "theme.js"></script>
+</body>
+</html>

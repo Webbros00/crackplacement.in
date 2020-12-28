@@ -1,0 +1,164 @@
+.page
+{
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: justify;
+    color: #e1e2d2;
+    border-radius: 25px;
+    box-shadow: 0 0 50px #00000080;
+    transition-duration: 0.4s;
+}
+
+.pagenav
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagenav button
+{
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: #05162200;
+    color: #1ba098;
+    border: none;
+    box-shadow: 0 0 10px #00000080;
+    transition-duration: 0.4s;
+}
+
+h1
+{
+    color: #1ba098;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-weight: 900;
+    transition-duration: 0.4s;
+}
+
+span
+{
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+table, th, td
+{
+    border: 1px solid #e1e2d1;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+.page ol
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.page ol li
+{
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+
+.page .mainlist .mainitem
+{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.page .mainlist .mainitem li
+{
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.pagenum
+{
+    display: flex;
+    justify-content: center;
+}
+
+.pagenum-1, .pagenum-2, .pagenum-3
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000000;
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1ba098;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.pagenum-2
+{
+    background-color: #deb998;
+    color: #000000;
+    width: 22px;
+    height: 22px;
+    box-shadow: 0 0 10px #000000;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .page
+    {
+        width: 60%;
+    }
+    
+    .pagenav
+    {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .page
+    {
+        width: 75%;
+    }
+
+    .pagenav
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .page
+    {
+        width: 90%;
+    }
+
+    .pagenav
+    {
+        width: 90%;
+    }
+}
