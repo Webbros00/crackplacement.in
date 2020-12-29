@@ -1,0 +1,72 @@
+.bio
+{
+    display: flex;
+    margin: 10px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hrt, .aat, .art, .stt
+{
+    width: 40px;
+    height: 40px;
+    background-color: #1ba098;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 40;
+}
+
+.l1
+{
+    width: 20px;
+    border-radius: 2px;
+    height: 3px;
+    background-color: #051622;
+}
+
+.l2
+{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #051622;
+    transform: rotate(90deg);
+}
+
+.hrb, .aab, .arb, .stb
+{
+    background-color: #051622;
+    color: #1ba098;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Comfortaa";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 270px;
+    padding: 0 70px 20px 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: translateY(20px);
+    text-align: justify;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 30;
+}
+
+.haider:hover .hrt-active, .atul:hover .aat-active, .ankit:hover .art-active,.sid:hover .stt-active
+{
+    transform: rotate(225deg);
+}
+
+.haider:hover .hrb-active, .atul:hover .aab-active, .ankit:hover .arb-active, .sid:hover .stb-active
+{
+    transform: translateY(-250px);
+    opacity: 1;
+}
