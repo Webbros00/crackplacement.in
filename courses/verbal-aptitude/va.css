@@ -1,0 +1,92 @@
+.page
+{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    color: #e1e2d2;
+    font-family: "Comfortaa";
+    transition: 0.4s;
+}
+
+h1
+{
+    color: #1ba098;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-weight: 900;
+    transition: 0.4s;
+}
+
+h2
+{
+    color: #e1e2d2;
+    font-family: "Comfortaa";
+    transition: 0.4s;
+}
+
+.valist ul
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.valist ul li
+{
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.valist ul li a
+{
+    color: #e1e2d2;
+    font-family: "Comfortaa";
+    width: auto;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .page
+    {
+        width: 60%;
+    }
+    
+    .pagenav
+    {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .page
+    {
+        width: 75%;
+    }
+
+    .pagenav
+    {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .page
+    {
+        width: 90%;
+    }
+
+    .pagenav
+    {
+        width: 90%;
+    }
+}
