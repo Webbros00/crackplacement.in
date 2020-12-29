@@ -1,0 +1,1 @@
+virtual-and-pure-virtual
