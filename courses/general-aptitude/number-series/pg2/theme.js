@@ -32,6 +32,7 @@ const mode = () => {
             document.getElementById('line3').style.backgroundColor = "#051622";
             document.getElementById('page').style.color = "#000000";
             document.getElementById('pageh1').style.color = "#051622";
+            document.getElementById('pagenum-1').style.color = "#000000";
         }
 
         else if(i%2 === 0)
@@ -56,6 +57,7 @@ const mode = () => {
             document.getElementById('line3').style.backgroundColor = "#1ba098";
             document.getElementById('page').style.color = "#e1e2d2";
             document.getElementById('pageh1').style.color = "#1ba098";
+            document.getElementById('pagenum-1').style.color = "#1ba098";
         }
     })
 }
